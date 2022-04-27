@@ -15,36 +15,152 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light navbar-expand-md">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand ms-3" href="./index.html">
                 Ground Zero
             </a>
-            <div>
-                <div class="input-group d-none d-lg-flex mx-4">
-                    <input class="form-control rounded-end pe-5" type="search" placeholder="Buscar productos"
-                        aria-label="Search">
-                    <i
-                        class="bi bi-search position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3"></i>
-                    <!-- <i class="ci-search position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3"></i> -->
-                    <i class="bi bi-heart position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3"
-                        style="transform: translateX(300%) translateY(-50%)!important;"><a
-                            href="./favoritos.html"></a></i>
-                </div>
+            <div class="input-group d-none d-md-flex w-50">
+                <input class="form-control rounded-end pe-5" type="search" placeholder="Buscar productos"
+                    aria-label="Search">
+                <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3"></i>
+                <i class="bi bi-heart position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3"
+                    style="transform: translateX(300%) translateY(-50%)!important;"><a href="./favoritos.html"></a></i>
+            </div>
 
-            </div>
-            <div>
-                <a class="ns-1 ms-lg-0 me-n1 me-lg-2" href="./Login.html">
-                    <div>
-                        <i class="bi bi-person-circle"></i>
-                    </div>
-                    <div class="ms-n3">
-                        <small>Mi Cuenta</small>
-                    </div>
-                </a>
-            </div>
+            <a class="ns-1 ms-md-3 me-n1 me-lg-2 me-1 me-md-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-person-circle"></i>
+                <small>Mi Cuenta</small>
+            </a>
+
         </div>
     </nav>
+    <nav class="navbar navbar-light bg-light navbar-expand-md">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Modal login -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Inicio de
+                                Sesión</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Registro</button>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="usuario@dominio.cl">
+                                    <div id="emailHelp" class="form-text">Nunca compartiremos tu información con
+                                        terceros.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3 form-check text-end">
+                                            <a href="#">Restablecer Contraseña</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="Fullname" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="Fullname"
+                                        aria-describedby="NombreCompleto" placeholder="Nombre Completo">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail3" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail2"
+                                        aria-describedby="Privacidadcorreo" placeholder="usuario@dominio.cl">
+                                    <div id="Privacidadcorreo" class="form-text">Nunca compartiremos tu información
+                                        con
+                                        terceros.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword2" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword2">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword3" class="form-label">Confirme
+                                        Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword3">
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary">Registrarme</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modal login -->
+
     <div class="container">
     </div>
 </body>
