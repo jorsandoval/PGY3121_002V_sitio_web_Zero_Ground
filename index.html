@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-light bg-light navbar-expand-md">
-        <div class="container-fluid">
+<body style="background-color: #E0C98D;">
+    <nav class="navbar navbar-light navbar-expand-md" style="background-color: #E0C98D;">
+        <div class="container-fluid" style="background-color: #E0C98D;">
             <a class="navbar-brand ms-5" href="./index.html">
                 Ground Zero
             </a>
@@ -36,14 +36,14 @@
 
         </div>
     </nav>
-    <nav class="navbar navbar-light bg-light navbar-expand-md">
-        <div class="container-fluid d-flex justify-content-end">
+    <nav class="navbar navbar-light navbar-expand-md" style="background-color: #E0C98D;">
+        <div class="container-fluid d-flex justify-content-end" style="background-color: #E0C98D;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center" style="background-color: #E0C98D;">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
                         <li class="nav-item">
@@ -54,7 +54,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Categorias
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #E0C98D;">
                                 <li><a class="dropdown-item" href="#">Pinturas</a></li>
                                 <li><a class="dropdown-item" href="#">Esculturas</a></li>
                                 <li><a class="dropdown-item" href="#">Orfebrerias</a></li>
@@ -74,37 +74,32 @@
         </div>
     </nav>
     <!-- Inicio Carrucel de imagenes -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="slide">
+    <div id="carouselExampleCaptions" class="carousel carousel-fade slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" data-bs-interval="0"
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" data-bs-interval="0"
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" data-bs-interval="0"
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <!-- <div class="carousel-item  active">
-                <img src="./assets/img/diferencias-crochet-punto-de-cruz-y-tejer.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item active">
+                <img src="./assets/img/Portada1.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Orfebreria</h5>
-                    <p>Productos locales, con cariño y dedicación.</p>
+                    <button type="button" class="btn btn-outline-light">Ver Producto</button>
                 </div>
             </div>
-            <div class="carousel-item ">
-                <img src="./assets/img/diferencias-crochet-punto-de-cruz-y-tejer.jpg   " class="d-block w-100" alt="...">
+            <div class="carousel-item">
+                <img src="./assets/img/Portada2.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <button type="button" class="btn btn-outline-light">Ver Producto</button>
                 </div>
-            </div> -->
-            <div class="carousel-item active">
-                <div class="w-100">
-                    <img src="./assets/img/tejido_pamela.svg" class="d-block" alt="...">
-                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/Portada3.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <button type="button" class="btn btn-outline-light">Ver Producto</button>
                 </div>
             </div>
         </div>
@@ -208,8 +203,47 @@
         </div>
     </div>
     <!-- Fin modal login -->
+    <div>
 
+    </div>
+    <!-- Inicio Card Group-->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-2 mx-1 mb-2" >
+        <div class="col">
+            <div class="card h-100">
+                <img src="./assets/img/img600x600.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./assets/img/img600x600.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a short card.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./assets/img/img600x600.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Card Group-->
+    <hr class="hr-light mb-5">
     <div class="container">
+        <div class="row pb-3">
+            <div ></div>
+        </div>
     </div>
 </body>
 
