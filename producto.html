@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-md" style="background-color: #8DD0E0;">
-        <div class="container-fluid" style="background-color: #8DD0E0;">
+<body style="background-color: #D0C692">
+    <nav class="navbar navbar-light navbar-expand-md" style="background-color: #D0C692">
+        <div class="container-fluid" style="background-color: #D0C692;">
             <a class="navbar-brand ms-5" href="./index.html">
                 Ground Zero
             </a>
@@ -36,25 +36,26 @@
 
         </div>
     </nav>
-    <nav class="navbar navbar-light navbar-expand-md" style="background-color: #C7A652;">
-        <div class="container-fluid d-flex justify-content-end" style="background-color: #C7A652;">
+    <nav class="navbar navbar-light navbar-expand-md" style="background-color: #D0C692;">
+        <div class="container-fluid d-flex justify-content-end" style="background-color: #D0C692;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="d-flex justify-content-center" style="background-color: #C7A652;">
+            <div class="d-flex justify-content-center" style="background-color: #D0C692;">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Categorias
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #C7A652;">
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #D0C692;">
                                 <li><a class="dropdown-item" href="#">Pinturas</a></li>
                                 <li><a class="dropdown-item" href="#">Esculturas</a></li>
                                 <li><a class="dropdown-item" href="#">Orfebrerias</a></li>
@@ -73,12 +74,12 @@
             </div>
         </div>
     </nav>
-    
-    <!-- Modal login -->
+
+    <!--Inicio Modal login -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background-color: #D0C692">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
@@ -162,24 +163,66 @@
     <!-- Fin modal login -->
 
     <center>
-    <div class="card mb-3" style="max-width: 1500px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="assets/img/favicon GZ.png" class="img-fluid rounded-start"  width="800" height="1500" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="card mb-3" style="max-width: 1500px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="assets/img/favicon GZ.png" class="img-fluid rounded-start" width="800" height="1500"
+                        alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </center>
 
-
+    <!-- Inicio footer_-->
+    <div class="container" style="background-color: #D0C692">
+        <div class="row pb-2 pt-5">
+            <div class="col-md-6 mb-2">
+                <div class="widget widget-links widget-light">
+                    <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start"
+                        style="list-style: none">
+                        <li class="widget-list-item me-4"><a class="widget-list-link" href="#">Inicio</a></li>
+                        <li class="widget-list-item me-4"><a class="widget-list-link" href="#">Nosotros</a></li>
+                        <li class="widget-list-item me-4"><a class="widget-list-link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-2">
+                <div
+                    class="widget widget-links widget-light widget-list  d-flex flex-wrap mb-3 justify-content-center justify-content-md-end">
+                    <button type="button" class="btn btn-outline-secondary widget-list-item"><a
+                            class="btn-social bs-light  widget-list-linkwidget-light mb-2" href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a></button>
+                    <button type="button" class="btn btn-outline-secondary widget-list-item"><a
+                            class="btn-social bs-light  widget-list-linkwidget-light mb-2" href="#">
+                            <i class="bi bi-whatsapp"></i>
+                        </a></button>
+                    <button type="button" class="btn btn-outline-secondary widget-list-item"><a
+                            class="btn-social bs-light  widget-list-linkwidget-light mb-2" href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a></button>
+                    <button type="button" class="btn btn-outline-secondary widget-list-item"><a
+                            class="btn-social bs-light  widget-list-linkwidget-light mb-2" href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a></button>
+                    <button type="button" class="btn btn-outline-secondary widget-list-item"><a
+                            class="btn-social bs-light  widget-list-linkwidget-light mb-2" href="#">
+                            <i class="bi bi-envelope"></i>
+                        </a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin footer-->
 
 
 </body>
